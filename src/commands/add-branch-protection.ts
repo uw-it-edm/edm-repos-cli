@@ -4,7 +4,7 @@ import cli from 'cli-ux';
 import Command from '../base';
 
 export class AddBranchProtection extends Command {
-  static description = 'describe the command here';
+  static description = 'Add branch protection on develop and master';
 
   static examples = [
     `$ edm-repos add-branch-protection test-repo

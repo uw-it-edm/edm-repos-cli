@@ -4,7 +4,7 @@ import cli from 'cli-ux';
 import Command from '../base';
 
 export class EnforceAdminProtection extends Command {
-  static description = 'describe the command here';
+  static description = 'Disable/Enable `Include administrators` on develop and master branch protection';
 
   static examples = [
     `$ enforce-admin-protection test-repo  --enableProtection

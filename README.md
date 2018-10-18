@@ -34,7 +34,7 @@ USAGE
 
 ## `edm-repos add-branch-protection REPO`
 
-describe the command here
+Add branch protection on develop and master
 
 ```
 USAGE
@@ -61,7 +61,7 @@ _See code: [src/commands/add-branch-protection.ts](https://github.com/uw-it-edm/
 
 ## `edm-repos enforce-admin-protection REPO`
 
-describe the command here
+Disable/Enable `Include administrators` on develop and master branch protection
 
 ```
 USAGE
