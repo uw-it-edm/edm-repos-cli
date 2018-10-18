@@ -17,11 +17,12 @@ export default abstract class extends Command {
 
   protected flags: any;
   protected args: any;
-  private _githubClient: GithubClient;
+  private _githubClient: GithubClient = new GithubClient('');
 
   async init() {
     // do some initialization
     cli.log('initializing github client');
+    // @ts-ignore
     const {flags} = this.parse(this.constructor);
 
     let ghToken;
@@ -34,7 +35,7 @@ export default abstract class extends Command {
     this.githubClient = new GithubClient(ghToken);
   }
 
-  async catch(err) {
+  async catch(err: any) {
     // handle any error from the command
     cli.log(err.message);
   }
