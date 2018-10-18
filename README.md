@@ -44,6 +44,7 @@ OPTIONS
   -h, --help             show CLI help
   -o, --owner=owner      (required) [default: uw-it-edm]
   -t, --ghToken=ghToken  Github Token for authentication
+  --disableTravisCheck   disable Travis check requirement
 
 EXAMPLE
   $ edm-repos add-branch-protection test-repo

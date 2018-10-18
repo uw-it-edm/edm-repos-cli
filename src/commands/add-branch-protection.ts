@@ -1,3 +1,4 @@
+import {flags} from '@oclif/command';
 import cli from 'cli-ux';
 
 import Command from '../base';
@@ -18,7 +19,8 @@ Added master branch protection. Response status 200
   ];
 
   static flags = {
-    ...Command.flags
+    ...Command.flags,
+    disableTravisCheck: flags.boolean({ description: 'disable Travis check requirement'})
   };
 
   static args = [
@@ -31,9 +33,7 @@ Added master branch protection. Response status 200
 
     let repo = await super.githubClient.getRepo(flags.owner, args.repo);
 
-    //TODO create repo if doesn't exist ?  ( https://octokit.github.io/rest.js/#api-Repos-create. Turn on `auto_init` and created develop and master branch using https://octokit.github.io/rest.js/#api-Gitdata-createReference
-
-    await this.githubClient.addTravisBranchProtections(flags.owner, repo.name, true, true);
+    await this.githubClient.addTravisBranchProtections(flags.owner, repo.name, true, true, flags.disableTravisCheck);
   }
 
 }

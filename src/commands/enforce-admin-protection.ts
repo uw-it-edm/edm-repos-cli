@@ -36,8 +36,6 @@ enabled admin protection for master
 
     cli.log(`found repo ${repo.name}`);
 
-    //TODO create repo if doesn't exist ?  ( https://octokit.github.io/rest.js/#api-Repos-create. Turn on `auto_init` and created develop and master branch using https://octokit.github.io/rest.js/#api-Gitdata-createReference
-
     if (flags.enableProtection) {
       await this.githubClient.enableAdminProtection(flags.owner, args.repo);
     } else if (flags.disableProtection) {

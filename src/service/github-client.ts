@@ -19,7 +19,7 @@ export class GithubClient {
     await this.disableAdminProtectionForBranch(owner, repoName, 'master');
   }
 
-  async addTravisBranchProtections(owner: string, repoName: string, developBranch: boolean, masterBranch: boolean) {
+  async addTravisBranchProtections(owner: string, repoName: string, developBranch: boolean, masterBranch: boolean, disableTravisCheck: boolean) {
     //TODO check if both develop and master branches are present
 
     const updateBranchProtectionParam = {} as Github.ReposUpdateBranchProtectionParams;
@@ -37,10 +37,15 @@ export class GithubClient {
 
     updateBranchProtectionParam.required_status_checks = {} as Github.ReposUpdateBranchProtectionParamsRequiredStatusChecks;
     updateBranchProtectionParam.required_status_checks.strict = true;
-    updateBranchProtectionParam.required_status_checks.contexts = [
-      'Travis CI - Branch',
-      'Travis CI - Pull Request'
-    ];
+
+    if (disableTravisCheck) {
+      updateBranchProtectionParam.required_status_checks.contexts = [];
+    } else {
+      updateBranchProtectionParam.required_status_checks.contexts = [
+        'Travis CI - Branch',
+        'Travis CI - Pull Request'
+      ];
+    }
 
     updateBranchProtectionParam.restrictions = {} as Github.ReposUpdateBranchProtectionParamsRestrictions;
     updateBranchProtectionParam.restrictions.teams = [];
