@@ -6,7 +6,9 @@ export class GithubClient {
 
   constructor(ghToken: string) {
     this.oktokit = new Github();
-    this.oktokit.authenticate({type: 'token', token: ghToken});
+    if(ghToken && ghToken.length > 0){
+      this.oktokit.authenticate({type: 'token', token: ghToken});
+    }
   }
 
   async enableAdminProtection(owner: string, repoName: string) {

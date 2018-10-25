@@ -17,7 +17,7 @@ export default abstract class extends Command {
 
   protected flags: any;
   protected args: any;
-  private _githubClient: GithubClient;
+  private _githubClient: GithubClient = new GithubClient('');
 
   async init() {
     // do some initialization
