@@ -1,9 +1,13 @@
 {
-  "name": "edm-repos-cli",
-  "version": "0.0.0",
+  "name": "@uw-it-edm/edm-repos-cli",
+  "version": "0.0.1",
   "author": "Maxime Deravet @maximede",
+  "private": false,
   "bin": {
     "edm-repos-cli": "./bin/run"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": "https://github.com/uw-it-edm/edm-repos-cli/issues",
   "dependencies": {
