@@ -4,9 +4,9 @@ edm-repos
 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/edm-repos.svg)](https://npmjs.org/package/edm-repos)
-[![Downloads/week](https://img.shields.io/npm/dw/edm-repos.svg)](https://npmjs.org/package/edm-repos)
-[![License](https://img.shields.io/npm/l/edm-repos.svg)](https://github.com/uw-it-edm/edm-repos-cli/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@uw-it-edm/edm-repos-cli.svg)](https://npmjs.org/package/@uw-it-edm/edm-repos-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/@uw-it-edm/edm-repos-cli.svg)](https://npmjs.org/package/@uw-it-edm/edm-repos-cli)
+[![License](https://img.shields.io/npm/l/@uw-it-edm/edm-repos-cli.svg)](https://github.com/uw-it-edm/edm-repos-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
