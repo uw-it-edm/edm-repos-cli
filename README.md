@@ -16,29 +16,29 @@ edm-repos
 <!-- usage -->
 ```sh-session
 $ npm install -g @uw-it-edm/edm-repos-cli
-$ edm-repos COMMAND
+$ edm-repos-cli COMMAND
 running command...
-$ edm-repos (-v|--version|version)
+$ edm-repos-cli (-v|--version|version)
 @uw-it-edm/edm-repos-cli/0.0.2 darwin-x64 node-v8.11.3
-$ edm-repos --help [COMMAND]
+$ edm-repos-cli --help [COMMAND]
 USAGE
-  $ edm-repos COMMAND
+  $ edm-repos-cli COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`edm-repos add-branch-protection REPO`](#edm-repos-add-branch-protection-repo)
-* [`edm-repos enforce-admin-protection REPO`](#edm-repos-enforce-admin-protection-repo)
-* [`edm-repos help [COMMAND]`](#edm-repos-help-command)
+* [`edm-repos-cli add-branch-protection REPO`](#edm-repos-cli-add-branch-protection-repo)
+* [`edm-repos-cli enforce-admin-protection REPO`](#edm-repos-cli-enforce-admin-protection-repo)
+* [`edm-repos-cli help [COMMAND]`](#edm-repos-cli-help-command)
 
-## `edm-repos add-branch-protection REPO`
+## `edm-repos-cli add-branch-protection REPO`
 
 Add branch protection on develop and master
 
 ```
 USAGE
-  $ edm-repos add-branch-protection REPO
+  $ edm-repos-cli add-branch-protection REPO
 
 OPTIONS
   -h, --help             show CLI help
@@ -59,13 +59,13 @@ EXAMPLE
 
 _See code: [src/commands/add-branch-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.2/src/commands/add-branch-protection.ts)_
 
-## `edm-repos enforce-admin-protection REPO`
+## `edm-repos-cli enforce-admin-protection REPO`
 
 Disable/Enable `Include administrators` on develop and master branch protection
 
 ```
 USAGE
-  $ edm-repos enforce-admin-protection REPO
+  $ edm-repos-cli enforce-admin-protection REPO
 
 OPTIONS
   -d, --disableProtection
@@ -87,13 +87,13 @@ EXAMPLE
 
 _See code: [src/commands/enforce-admin-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.2/src/commands/enforce-admin-protection.ts)_
 
-## `edm-repos help [COMMAND]`
+## `edm-repos-cli help [COMMAND]`
 
-display help for edm-repos
+display help for edm-repos-cli
 
 ```
 USAGE
-  $ edm-repos help [COMMAND]
+  $ edm-repos-cli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for

@@ -50,7 +50,7 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "edm-repos",
+    "bin": "edm-repos-cli",
     "plugins": [
       "@oclif/plugin-help"
     ]
