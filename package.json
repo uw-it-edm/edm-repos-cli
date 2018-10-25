@@ -1,6 +1,6 @@
 {
   "name": "@uw-it-edm/edm-repos-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Maxime Deravet @maximede",
   "private": false,
   "bin": {

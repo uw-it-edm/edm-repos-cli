@@ -19,7 +19,7 @@ $ npm install -g @uw-it-edm/edm-repos-cli
 $ edm-repos COMMAND
 running command...
 $ edm-repos (-v|--version|version)
-@uw-it-edm/edm-repos-cli/0.0.1 darwin-x64 node-v8.11.3
+@uw-it-edm/edm-repos-cli/0.0.2 darwin-x64 node-v8.11.3
 $ edm-repos --help [COMMAND]
 USAGE
   $ edm-repos COMMAND
@@ -57,7 +57,7 @@ EXAMPLE
   Added master branch protection. Response status 200
 ```
 
-_See code: [src/commands/add-branch-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.1/src/commands/add-branch-protection.ts)_
+_See code: [src/commands/add-branch-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.2/src/commands/add-branch-protection.ts)_
 
 ## `edm-repos enforce-admin-protection REPO`
 
@@ -85,7 +85,7 @@ EXAMPLE
   enabled admin protection for master
 ```
 
-_See code: [src/commands/enforce-admin-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.1/src/commands/enforce-admin-protection.ts)_
+_See code: [src/commands/enforce-admin-protection.ts](https://github.com/uw-it-edm/edm-repos-cli/blob/v0.0.2/src/commands/enforce-admin-protection.ts)_
 
 ## `edm-repos help [COMMAND]`
 
