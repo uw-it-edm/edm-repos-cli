@@ -20,8 +20,8 @@ enabled admin protection for master
 
   static flags = {
     ...Command.flags,
-    enableProtection: flags.boolean({char: 'e'}),
-    disableProtection: flags.boolean({char: 'd'})
+    enableProtection: flags.boolean({char: 'e', exclusive: ['disableProtection']}),
+    disableProtection: flags.boolean({char: 'd', exclusive: ['enableProtection']})
   };
 
   static args = [
